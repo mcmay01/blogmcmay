@@ -1,0 +1,165 @@
+:root {
+    --cybehad:  #6c4b13;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    background: #ddd;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    font-family: tahoma, arial, helvetica, lucida sans, sans-serif;
+}
+body {
+    margin: 4px;
+    color: #5A5A5A;
+    line-height: 1.6;
+    position: relative;
+    background-color: #fcfcfc;
+    font-size: large;
+    box-shadow: 1px 3px 3px #d7d7d7;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+input:focus, textarea:focus{
+    outline: 0;
+}
+
+::selection {
+    background: #6c4b13;
+    color: #fff;
+    text-shadow: none;
+}
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #6c4b14;
+    outline: 1px solid slategray;
+}
+[tabindex="-1"]:focus:not(:focus-visible) {
+    outline: 0 !important
+}
+
+
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    float: left;
+    width: 100%;
+    padding: 15px;
+}
+@media only screen and (max-width: 599px){
+    .text-m-center{
+        text-align: center;
+    }
+    .header ul li{
+        font-size: large;
+        padding: 4px;
+    }
+    .menu ul li{
+        font-size: large;
+    }
+    .hidden-m{
+        display: none !important;
+    }
+}
+@media only screen and (min-width:600px) {
+    /*      */
+    .content-fluid{
+        margin-top: 0
+    }
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+footer {
+    width: 100%;
+    padding: 8px;
+    color: #ffffff;
+    font-size: 16px;
+}
+footer p{
+    margin: 8px;
+}
+footer nav{
+
+}
+footer nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+footer nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+footer nav ul li a:hover{
+    color: #ddd;
+}
