@@ -1,0 +1,27 @@
+# BEGIN
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ -[L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /inded.php [L]
+</IfModule>
+# END
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://${HTTP_HOST}%{REQUSET_URI} [L,R=301]
+
+DirectoryIndex index.php
+Options -Indexes
+ErrorDocument 404 /404.html
+
+ExpiresActive On
+ExpiresDefault A0
+<FilesMatch "\.(jpg|png|gif)$" >
+ExpiresDefault A3600
+</FilesMatch>
+
+php_value auto_prepend_file /var/www/html/blogmcmay/includes/global_prepend.php
+php_value auto_append_file /var/www/html/blogmcmay/includes/global_append.php
