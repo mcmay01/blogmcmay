@@ -5,9 +5,9 @@ function callback($b){
     if ($_SERVER['SERVER_NAME'] == $mobile){
         //replace www.... with m....
         $b = str_replace($web_domain, $mobile, $b);
-        // replace all hyperlinked images with regular links, using the alt text
+        // replace all hyperlinked imgs with regular links, using the alt text
         $b = preg_replace('/(<a[^>]*>)(<img[^>]+alt=")([^"]*)("[^>]*>)(<\/a>)/i' ,'<p class="link">$1$3$5</p>' , $b);
-        // replace images with paragraph tags
+        // replace imgs with paragraph tags
         $b = preg_replace('/(<img[^>]+alt=")([^"]*)("[^>]*>)/' , '<p class="image">[$2]</p>' , $b);
         // strip out stylesheet calls
         $b = preg_replace('/(<link[^>]+rel="[^"]*stylesheet"[^>]*>|style="[^"]*")/i' , '' , $b);

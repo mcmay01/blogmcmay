@@ -4,10 +4,10 @@ function hide_lists() {
 
 //Cross fade
 images = [
-    "images/pasta.jpg" ,
-    "images/tacosalad.jpg" ,
-    "images/phadthai.jpg" ,
-    "images/chickenmac.jpg"
+    "imgs/pasta.jpg" ,
+    "imgs/tacosalad.jpg" ,
+    "imgs/phadthai.jpg" ,
+    "imgs/chickenmac.jpg"
 ]
 var image_box = $("#main_image" );
 image_box.css({'position' : 'relative' , 'height' : '144px' } );

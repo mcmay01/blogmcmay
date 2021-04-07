@@ -1,0 +1,12 @@
+BlogMcMay_Site{
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+about{
+    width: 50%;
+    float: left;
+}
+
+url:before{content: "URL: "}
+description:before{content: "Description: "}

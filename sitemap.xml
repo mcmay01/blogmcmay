@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="assets/css/sitemap.css"?>
+<BlogMcMay_Site>
+    <about>
+        <url>http://www.blogmcmay.com/about.php</url>
+        <description>About BlogMcMay</description>
+    </about>
+    <new>
+        <url>http://www.blogmcmay.com/new.php</url>
+        <description>Top 5 new blog posted by McMay.Sr</description>
+    </new>
+</BlogMcMay_Site>

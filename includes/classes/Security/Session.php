@@ -22,10 +22,10 @@ class Session
         $this->visitor_count();
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if (!isset($_POST['_token'])) {
-                die("invalid action <a href='../'>Home Page</a>");
+                die("invalid action <a href='..'>Home Page</a>");
             }
             if (hash_equals($_SESSION['_token'], $_POST['_token']) === false) {
-                die("Invalid action, redirect to home <a href='../'>Home Page</a>");
+                die("Invalid action, redirect to home <a href='..'>Home Page</a>");
             }
         }
     }

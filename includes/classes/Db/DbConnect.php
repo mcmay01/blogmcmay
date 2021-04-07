@@ -27,7 +27,7 @@ class DbConnect extends \Core\McObjects
     public function confirm_query($result)
     {
         if (!$result) {
-            die("Query failed" . $this->dbc->error);
+            die("Query failed: Error 257e9" );// . $this->dbc->error);
         }
     }
 
